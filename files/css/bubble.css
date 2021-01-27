@@ -3,7 +3,7 @@
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(200px);
+        transform: translateY(50px);
     }
     100% {
         transform: translateY(0px);
@@ -27,17 +27,17 @@
 
 .bubble .item{
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: #FF0000;
-    opacity: 30%;
+    opacity: 20%;
 }
 
 .bound{
-    animation: bound 0.5s ease-out 0s infinite normal;
+    animation: bound 20s ease-out 0s infinite normal;
 }
 
 .move{
-    animation: move 10s linear 0s infinite normal;
+    animation: move 50s linear 0s infinite normal;
 }
