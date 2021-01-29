@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>three.js</title>
+    <meta charset="utf-8">
+    <style>
+      #info {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                padding: 10px;
+                color: #FFFFFF;
+                box-sizing: border-box;
+                text-align: center;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                pointer-events: none;
+                z-index: 1; /* TODO Solve this in HTML */
+      }
+      #score {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                padding: 10px;
+                color: #FFFFFF;
+                box-sizing: border-box;
+                text-align:left;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                pointer-events: none;
+                z-index: 1; /* TODO Solve this in HTML */
+      }
+      body{margin: 0;}
+      canvas{display: block;}
+    </style>
+  </head>
+
+  <body>
+    <div id = "info">
+      <h1>This is AvoidGame(Rough Version)</h1>
+      Press "A" or "D" to lateral movement.<br>
+      Press "W" or "S" to vertical movement.
+    </div>
+    <div id = "score">
+      <h1>Score: 0</h1>
+    </div>
+    <script type="module" src="javascript/scene00s.js"></script>
+  </body>
+</html>
+
