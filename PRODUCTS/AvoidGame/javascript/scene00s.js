@@ -74,7 +74,7 @@ function init_three() {
    scene = new THREE.Scene();
 
    const loader = new THREE.TextureLoader();
-   bgTexture = loader.load("/files/img/BackDesign.png");
+   bgTexture = loader.load("/PRODUCTS/AvoidGame/img/BackDesign.png");
 
    // カメラを作成
    camera = new THREE.PerspectiveCamera(90, 
