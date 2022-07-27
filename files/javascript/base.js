@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("DOMContentLoaded", function() {
     // セットアップ時に追加するタグ部の宣言
     var head = document.getElementsByTagName("head")[0];
     var body = document.getElementById("setup");
@@ -28,4 +28,4 @@ window.onload = function() {
 
     // ローカルで動かないためsendする
     xhr.send();
-}
+});
