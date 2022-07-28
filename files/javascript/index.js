@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
             console.log(json_data);
             for (let commit of json_data) {
-                changelog.innerHTML += `<div>${commit["commit"]["author"]["date"]} : ${commit["commit"]["message"]}</div>`;
+                changelog.innerHTML += `<p>${commit["commit"]["author"]["date"]} : ${commit["commit"]["message"]}</p><br>`;
             }
         }
     }
