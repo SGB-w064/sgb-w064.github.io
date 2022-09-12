@@ -17,7 +17,9 @@ function addChangeLog(){
             const json_data = JSON.parse(xhr.responseText);
 
             for (let commit of json_data) {
-                changelog.innerHTML += `<p>${commit["commit"]["author"]["date"]} : ${commit["commit"]["message"]}</p><br>`;
+                let date = new Date(commit["commit"]["author"]["date"])
+                date = date.toLocaleString("ja-JP", {timeZone:"Asia/Tokyo"})
+                changelog.innerHTML += `<p>${date} : ${commit["commit"]["message"]}</p><br>`;
             }
         }
     }
