@@ -4,13 +4,79 @@
     <meta charset="utf-8"/>
     <title>Profile | SGB's Page</title>
     <script type="module" src="/files/javascript/base.js"></script>
+    <style>
+        #prof_elem{margin-bottom: 10px;}
+        table th, td{padding: 10px;}
+        li ul{padding-left: 1em;}
+    </style>
 </head>
 
 <body>
     <div id="setup"></div>
-    <div id="profile_icon" style="display: inline-block;">
-        <img src="/files/img/icon.JPG" width="10%" height="auto" alt="icon" style="margin-bottom: 10px;">
-        <p>仮置き犬</p>
+    <div id="container" style="margin-left: 50px;">
+        <div id="main_profile">
+            <div id="profile_icon" style="width: 150px; display: inline-block;">
+                <img src="/files/img/icon.JPG" width="150px" height="auto" alt="icon" style="margin-bottom: 10px;">
+                <h2 style="text-align: center;">がべっち</h2>
+            </div>
+            <div id="profile_list" style="margin-left: 50px; display: inline-block;">
+                <div id="prof_elem">
+                    <h3>主に使用している言語</h3>
+                    Python
+                </div>
+                <div id="prof_elem">
+                    <h3>主に使用している環境</h3>
+                    Windows10, Google Compute Engine, Raspberry Pi 400
+                </div>
+                <div id="prof_elem">
+                    <h3>各リンク</h3>
+                    Twitter : <a href="https://twitter.com/sgb_gb" target="_blank">@sgb_gb</a><br>
+                    GitHub : <a href="https://github.com/SGB-w064" target="_blank">SGB-w064</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="profile_details" style="margin-top: 50px;">
+            <div id="prof_elem">
+                <h3 style="margin-bottom: 10px;">表にするほどでもない経歴</h3>
+                <table border="1" cellpadding="10" style="border-collapse: collapse;">
+                    <tr><th>年月</th><th>経歴</th></tr>
+                    <tr><td>2016年4月</td><td>大阪府立桃谷高等学校 通信制昼間部 入学</td></tr>
+                    <tr><td>2019年3月</td><td>大阪府立桃谷高等学校 通信制昼間部 卒業</td></tr>
+                    <tr><td>2019年4月</td><td>大阪電気通信大学 総合情報学部 デジタルゲーム学科 入学</td></tr>
+                </table>
+            </div>
+
+            <div id="prof_elem">
+                <h3>現在プレイしている主なゲーム</h3>
+                <ul style="list-style-position: inside;">
+                    <li>PC
+                        <ul>
+                            <li>Valorant</li>
+                            <li>Black Desert Online</li>
+                            <li>osu!</li>
+                        </ul>
+                    </li>
+                    <li>スマートフォン
+                        <ul>
+                            <li>PrincessConnectReDive</li>
+                            <li>Girls' Frontline</li>
+                            <li>Arcaea</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div id="prof_elem">
+                <h3>影響を受けたゲーム</h3>
+                <ul style="list-style-position: inside;">
+                    <li>東方Project</li>
+                    <li>Alliance of Valiant Arms</li>
+                    <li>Phantasy Star Online 2</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 
