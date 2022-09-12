@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function() {
+function addChangeLog(){
     // コード中に定義し直すことがないであろう数値を連想配列で宣言
     const data = {
         "github_api_url" : "https://api.github.com/repos",
@@ -25,5 +25,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
     xhr.open("GET", `${data.github_api_url}/${data.owner}/${data.repo}/commits`, true);
     xhr.send();
+}
 
+window.addEventListener("DOMContentLoaded", function() {
+    addChangeLog();
 });
