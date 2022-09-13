@@ -51,9 +51,9 @@ function addRecommendOpening(){
     const param = "?mute=1&loop=1&playsinline=1&disablekb=1&rel=0";
 
     // おすすめからランダムに1つ選択する
-    const urls_index = new Uint32Array(urls.length)
-    self.crypto.getRandomValues(urls_index);
-    let recom_url = urls[urls_index.indexOf(Math.max(...urls_index))];
+    const random_array = new Uint32Array(1);
+    self.crypto.getRandomValues(random_array);
+    let recom_url = urls[random_array[0] % urls.length];
     //パラメータをURLに追加する
     recom_url = recom_url.replace(original_url, for_embed_url) + param;
 
