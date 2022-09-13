@@ -21,10 +21,11 @@ function addChangeLog(){
                 date = date.toLocaleString("ja-JP", {timeZone:"Asia/Tokyo"})
                 changelog.innerHTML += `<p>${date} : ${commit["commit"]["message"]}</p><br>`;
             }
+            changelog.innerHTML +='<a href="https://github.com/SGB-w064/sgb-w064.github.io/commits">これより過去はこちらから</a>';
         }
     }
 
-    xhr.open("GET", `${data.github_api_url}/${data.owner}/${data.repo}/commits`, true);
+    xhr.open("GET", `${data.github_api_url}/${data.owner}/${data.repo}/commits?per_page=10`, true);
     xhr.send();
 }
 
