@@ -1,0 +1,43 @@
+html {
+    /* サイズ */
+    --size: 100px;
+
+    /* 図形色 */
+    --color_1: #44cdff4d;
+
+    /* 重ね書き円の色 */
+    --circle_1_color: #FFF;
+    /* 重ね書き円のサイズ */
+    --circle_1_size: calc(var(--size) / 2) calc(var(--size) / 2);
+    /* 重ね書き円 */
+    --_circle_1: radial-gradient(circle at 50% 50%, var(--circle_1_color) 75%, transparent 0); 
+
+    background: 
+        var(--_circle_1) calc(0 * var(--size)) calc(0 * var(--size)) / var(--circle_1_size),
+        radial-gradient(circle at 50% 50%, var(--color_1) 75%, transparent 0)
+        0 0 / var(--size) var(--size);
+    animation: anim 3s infinite;
+}
+
+@keyframes anim {
+    0%{
+        background-position: 
+        0 0, calc(0 * var(--size)) calc(0 * var(--size));
+    }
+    25%{
+        background-position: 
+        0 0, calc(0 * var(--size)) calc(1 * var(--size));
+    }
+    50%{
+        background-position: 
+        0 0, calc(1 * var(--size)) calc(1 * var(--size));
+    }
+    75%{
+        background-position: 
+        0 0, calc(1 * var(--size)) calc(2 * var(--size));
+    }
+    100%{
+        background-position: 
+        0 0, calc(2 * var(--size)) calc(2 * var(--size));
+    }
+}
