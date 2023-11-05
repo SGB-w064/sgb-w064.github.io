@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -17,17 +17,38 @@ header{
 }
 
 .header_menu{
-    line-height: 100px;
-    float: left;
-    margin-left: 30px;
+    height: 100px;
     width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
 }
 
 .menu_item{
     display: inline-block;
+    text-align: center;
+    min-width: 50px;
+    padding: 1% 5%;
     margin: 0 20px;
+    border-radius: 100%;
+    border: #000F08 solid 3px;
+    background-color: #FFDDDD;
 }
 
-.main{
+.container {
+    margin: 100px 5%;
+    padding: 5%;
+    border: 5px solid #F7F0FF;
+    border-radius: 50px;
+    width: 80%;
+    height: 90%;
     text-align: center;
+    background-color: #FFFFEE;
+}
+
+iframe {
+    max-width: 70%;
+    width: 70%;
+    font-size: 80vw;
+    max-height: calc(9em / 16);
 }
