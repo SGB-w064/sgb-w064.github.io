@@ -42,8 +42,12 @@ header{
     border-radius: 50px;
     width: 80%;
     height: 90%;
-    text-align: center;
     background-color: #FFFFEE;
+}
+
+#changelog {
+    margin-bottom: 50px;
+    text-align: left;
 }
 
 iframe {
